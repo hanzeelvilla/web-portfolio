@@ -1,4 +1,4 @@
-import { Menu, X } from "lucide-react";
+import { MdMenu, MdClose } from "react-icons/md";
 import { useState } from "react";
 
 const navigationLinks = [
@@ -11,7 +11,6 @@ const navigationLinks = [
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
@@ -19,7 +18,7 @@ export const Navbar = () => {
       <div className="flex items-center justify-between">
         <p className="text-2xl font-semibold tracking-tight">Hanzeel Villa</p>
 
-        <div className="hidden items-center gap-5 text-base font-medium md:flex">
+        <div className="hidden items-center gap-5 font-medium md:flex">
           {navigationLinks.map((link) => (
             <a
               key={link.label}
@@ -33,15 +32,17 @@ export const Navbar = () => {
 
         <button
           aria-expanded={isMenuOpen}
-          aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-label={
+            isMenuOpen ? "Close navigation menu" : "Open navigation menu"
+          }
           className="inline-flex h-11 w-11 items-center justify-center rounded-md border border-slate-200 text-slate-700 transition-colors hover:bg-slate-100 md:hidden"
           onClick={() => setIsMenuOpen((currentValue) => !currentValue)}
           type="button"
         >
           {isMenuOpen ? (
-            <X className="h-6 w-6" />
+            <MdClose className="h-6 w-6" />
           ) : (
-            <Menu className="h-6 w-6" />
+            <MdMenu className="h-6 w-6" />
           )}
         </button>
       </div>
