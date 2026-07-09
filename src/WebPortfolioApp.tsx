@@ -1,4 +1,5 @@
 import { Navbar } from "./components/layout/Navbar";
+import { Experience } from "./components/sections/Experience";
 import { Hero } from "./components/sections/Hero";
 
 export const WebPortfolioApp = () => {
@@ -8,6 +9,7 @@ export const WebPortfolioApp = () => {
 
       <main className="mx-auto mt-12 flex max-w-6xl flex-col gap-8 md:mt-24">
         <Hero />
+        <Experience />
       </main>
     </div>
   );
