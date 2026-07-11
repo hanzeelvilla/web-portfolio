@@ -6,7 +6,7 @@ export interface WorkExperience {
   responsibilities: responsibility[];
 }
 
-type responsibility = {
+export type responsibility = {
   id: string;
   text: string;
 };
