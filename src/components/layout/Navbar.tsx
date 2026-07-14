@@ -2,11 +2,11 @@ import { MdMenu, MdClose } from "react-icons/md";
 import { useState } from "react";
 
 const navigationLinks = [
-  { label: "About Me", href: "#" },
-  { label: "Experience", href: "#" },
-  { label: "Projects", href: "#" },
-  { label: "Stack", href: "#" },
-  { label: "Education", href: "#" },
+  { label: "About Me", href: "#about" },
+  { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
+  { label: "Stack", href: "#stack" },
+  { label: "Education", href: "#education" },
 ];
 
 export const Navbar = () => {
@@ -14,7 +14,7 @@ export const Navbar = () => {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <nav className="mx-auto w-full max-w-6xl border-b border-slate-200 pb-4">
+    <nav className="sticky top-0 z-50 mx-auto w-full max-w-6xl border-b border-slate-200 bg-white py-4">
       <div className="flex items-center justify-between">
         <p className="text-2xl font-semibold tracking-tight">Hanzeel Villa</p>
 

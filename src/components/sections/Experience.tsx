@@ -3,7 +3,10 @@ import { workExperienceData } from "../../data";
 
 export const Experience = () => {
   return (
-    <section className="mx-auto w-full max-w-6xl px-4">
+    <section
+      id="experience"
+      className="mx-auto w-full max-w-6xl scroll-mt-24 px-4"
+    >
       <div className="mb-5 flex items-center justify-center gap-3">
         <h2 className="text-2xl font-bold tracking-tight text-slate-800">
           Work Experience

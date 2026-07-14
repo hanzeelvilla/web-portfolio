@@ -4,7 +4,10 @@ import { EducationCard } from "../ui/EducationCard";
 
 export const Education = () => {
   return (
-    <section className="mx-auto w-full max-w-6xl px-4">
+    <section
+      id="education"
+      className="mx-auto w-full max-w-6xl scroll-mt-24 px-4"
+    >
       <div className="grid gap-10 md:grid-cols-2 md:gap-8">
         <div>
           <h2 className="mb-8 text-center text-2xl font-bold tracking-tight text-slate-800 md:text-left">
