@@ -21,7 +21,7 @@ export const CertificationCard = ({
           <p className="text-sm text-slate-500">{issuer}</p>
         </div>
       </div>
-      <p className="shrink-0 text-sm uppercase text-slate-400">{date}</p>
+      <p className="shrink-0 text-sm uppercase text-slate-600">{date}</p>
     </div>
   );
 };

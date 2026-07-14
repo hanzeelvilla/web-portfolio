@@ -7,7 +7,7 @@ import {
 
 export const Footer = () => {
   return (
-    <footer className="mx-auto w-full max-w-6xl border-t border-slate-200 px-4 pt-8">
+    <footer className="mx-auto w-full max-w-6xl border-t border-slate-200 px-4 pt-6">
       <div className="flex items-center justify-center gap-3">
         <a
           href="mailto:hanzeelvilla0@gmail.com"

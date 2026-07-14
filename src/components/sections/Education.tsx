@@ -10,7 +10,7 @@ export const Education = () => {
     >
       <div className="grid gap-10 md:grid-cols-2 md:gap-8">
         <div>
-          <h2 className="mb-8 text-center text-2xl font-bold tracking-tight text-slate-800 md:text-left">
+          <h2 className="mb-8 text-center text-4xl font-bold tracking-tight text-slate-800 md:text-left">
             Education
           </h2>
           <div className="flex flex-col">
@@ -25,7 +25,7 @@ export const Education = () => {
         </div>
 
         <div>
-          <h2 className="mb-8 text-center text-2xl font-bold tracking-tight text-slate-800 md:text-left">
+          <h2 className="mb-8 text-center text-4xl font-bold tracking-tight text-slate-800 md:text-left">
             Certifications
           </h2>
           <div className="flex flex-col gap-4">

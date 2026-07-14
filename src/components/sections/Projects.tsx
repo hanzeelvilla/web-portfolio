@@ -9,8 +9,8 @@ export const Projects = () => {
       id="projects"
       className="mx-auto w-full max-w-6xl scroll-mt-24 px-4"
     >
-      <div className="mb-5 flex items-center justify-center gap-3">
-        <h2 className="text-2xl font-bold tracking-tight text-slate-800">
+      <div className="mb-8 flex items-center justify-center gap-3">
+        <h2 className="text-4xl font-bold tracking-tight text-slate-800">
           Projects
         </h2>
       </div>

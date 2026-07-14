@@ -9,18 +9,16 @@ import {
 export const Hero = () => {
   return (
     <section id="about" className="mx-auto w-full max-w-6xl scroll-mt-24 px-4">
-      <div className="mb-5 flex items-center justify-center gap-3">
-        <h1 className="text-2xl font-bold tracking-tight text-slate-800">
+      <div className="mb-8 flex items-center justify-center gap-3">
+        <h1 className="text-4xl font-bold tracking-tight text-slate-800">
           About Me
         </h1>
       </div>
 
       <div className="flex flex-col items-center justify-center gap-6 text-center md:flex-row md:text-left">
         <div className="flex flex-col items-center md:items-start gap-2">
-          <p className="text-4xl font-bold tracking-tight">Hanzeel Villa</p>
-          <p className="text-lg font-medium text-slate-600">
-            Software Engineer
-          </p>
+          <p className="text-2xl font-bold tracking-tight">Hanzeel Villa</p>
+          <p className="font-medium text-slate-600">Software Engineer</p>
           <p className="text-center md:text-left max-w-2xl">
             Software Engineer bridging the gap between digital systems and the
             physical world. I specialize in crafting robust, high-performance

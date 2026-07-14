@@ -11,7 +11,7 @@ export const WebPortfolioApp = () => {
     <div className="min-h-screen px-6 py-4">
       <Navbar />
 
-      <main className="mx-auto mt-12 flex max-w-6xl flex-col gap-8 md:mt-24">
+      <main className="mx-auto mt-12 flex max-w-6xl flex-col gap-16 md:mt-24 md:gap-24">
         <Hero />
         <Experience />
         <Projects />
