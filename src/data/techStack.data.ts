@@ -22,6 +22,13 @@ import {
 export const techStackData: TechStack = {
   languages: [typescriptLogo, javascriptLogo, pythonLogo],
   frontend: [reactLogo, nextJsLogo, tailwindCssLogo],
-  backend: [nodeJsLogo, expressJsLogo, nestJsLogo, mySqlLogo, postgreSqlLogo, mongoDbLogo],
+  backend: [
+    nodeJsLogo,
+    expressJsLogo,
+    nestJsLogo,
+    mySqlLogo,
+    postgreSqlLogo,
+    mongoDbLogo,
+  ],
   devops: [gitLogo, dockerLogo, azureLogo, cloudflareLogo, vercelLogo],
 };

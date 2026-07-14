@@ -27,10 +27,7 @@ export const Education = () => {
           </h2>
           <div className="flex flex-col gap-4">
             {certificationsData.map((certification) => (
-              <CertificationCard
-                key={certification.name}
-                {...certification}
-              />
+              <CertificationCard key={certification.name} {...certification} />
             ))}
           </div>
         </div>
