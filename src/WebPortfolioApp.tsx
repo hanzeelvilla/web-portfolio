@@ -2,6 +2,7 @@ import { Navbar } from "./components/layout/Navbar";
 import { Experience } from "./components/sections/Experience";
 import { Hero } from "./components/sections/Hero";
 import { Projects } from "./components/sections/Projects";
+import { Stack } from "./components/sections/Stack";
 
 export const WebPortfolioApp = () => {
   return (
@@ -12,6 +13,7 @@ export const WebPortfolioApp = () => {
         <Hero />
         <Experience />
         <Projects />
+        <Stack />
       </main>
     </div>
   );
