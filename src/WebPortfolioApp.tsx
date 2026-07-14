@@ -1,4 +1,5 @@
 import { Navbar } from "./components/layout/Navbar";
+import { Education } from "./components/sections/Education";
 import { Experience } from "./components/sections/Experience";
 import { Hero } from "./components/sections/Hero";
 import { Projects } from "./components/sections/Projects";
@@ -14,6 +15,7 @@ export const WebPortfolioApp = () => {
         <Experience />
         <Projects />
         <Stack />
+        <Education />
       </main>
     </div>
   );

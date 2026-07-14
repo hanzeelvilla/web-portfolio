@@ -128,3 +128,9 @@ export const vercelLogo: TechLogo = {
   Icon: SiVercel,
   hoverColor: "#000000",
 };
+
+export const claudeLogo: TechLogo = {
+  name: "Claude",
+  Icon: SiCloudflare,
+  hoverColor: "#F38020",
+}
