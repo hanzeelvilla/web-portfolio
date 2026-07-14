@@ -1,5 +1,6 @@
 import {
   SiArduino,
+  SiClaudecode,
   SiCloudflare,
   SiDocker,
   SiExpress,
@@ -131,6 +132,6 @@ export const vercelLogo: TechLogo = {
 
 export const claudeLogo: TechLogo = {
   name: "Claude",
-  Icon: SiCloudflare,
+  Icon: SiClaudecode,
   hoverColor: "#F38020",
-}
+};
