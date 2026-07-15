@@ -1,7 +1,15 @@
 import { projectsData } from "../../data";
 import { TechPill } from "../ui/TechPill";
+import { LazyVideo } from "../ui/LazyVideo";
 import { VscDebugStart } from "react-icons/vsc";
 import { ImGithub } from "react-icons/im";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "../ui/carousel";
 
 export const Projects = () => {
   return (
@@ -21,15 +29,43 @@ export const Projects = () => {
             key={project.title}
             className="flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_10px_30px_rgba(15,23,42,0.08)] transition-shadow duration-300 hover:shadow-[0_16px_40px_rgba(15,23,42,0.14)]"
           >
-            <div className="p-4 md:p-6">
-              <img
-                src={project.image}
-                alt=""
-                className="aspect-4/3 w-full rounded-xl object-cover shadow-md"
-              />
-            </div>
+            <Carousel className="group w-full">
+              <CarouselContent>
+                {project.media.map((media, index) => (
+                  <CarouselItem key={media.src}>
+                    <div className="aspect-video w-full overflow-hidden bg-slate-100">
+                      {media.type === "video" ? (
+                        <LazyVideo
+                          src={media.src}
+                          poster={media.poster}
+                          width={media.width}
+                          height={media.height}
+                          title={`${project.title} demo`}
+                        />
+                      ) : (
+                        <img
+                          src={media.src}
+                          alt={`${project.title} screenshot ${index + 1}`}
+                          width={media.width}
+                          height={media.height}
+                          loading="lazy"
+                          decoding="async"
+                          className="h-full w-full object-cover"
+                        />
+                      )}
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              {project.media.length > 1 && (
+                <>
+                  <CarouselPrevious className="left-2" />
+                  <CarouselNext className="right-2" />
+                </>
+              )}
+            </Carousel>
 
-            <div className="flex h-full flex-col items-start gap-3 px-6 pb-6">
+            <div className="flex h-full flex-col items-start gap-3 px-6 p-6">
               <p className="text-lg font-semibold text-slate-800">
                 {project.title}
               </p>

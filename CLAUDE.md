@@ -25,8 +25,11 @@ Single-page portfolio with no routing. Root component (`WebPortfolioApp.tsx`) co
 - `src/components/ui/` — reusable primitives (ExperienceCard, TechPill)
 - `src/data/*.data.ts` — static content as typed objects; re-exported via `src/data/index.ts`
 - `src/types/` — TypeScript interfaces; re-exported via `src/types/index.ts`
+- `src/hooks/` — reusable React hooks (useInView)
 
 **Adding content:** All portfolio content lives in `src/data/`. New entries only require updating the relevant `.data.ts` file — no component changes needed unless the data shape changes.
+
+**Media:** Project media is declared in `projects.data.ts` as a `ProjectMedia[]` discriminated union (`image` | `video`). Videos require a `poster` and render via `LazyVideo`, which only mounts the `<video>` once it scrolls into view. Encode videos to 720p H.264 (`-crf 28 -movflags +faststart -an`) and images to WebP at ~1200px before adding them — source files at full resolution should never enter the repo.
 
 **Styling:** Tailwind CSS v4 utility classes only — no CSS modules, no CSS-in-JS. Responsive breakpoint is `md:`.
 

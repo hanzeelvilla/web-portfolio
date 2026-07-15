@@ -1,4 +1,4 @@
-import profileImage from "../../assets/images/profile.png";
+import profileImage from "../../assets/images/profile.webp";
 import {
   AiOutlineMail,
   AiFillLinkedin,
@@ -70,7 +70,10 @@ export const Hero = () => {
         <img
           src={profileImage}
           alt="Foto de Hanzeel Villa"
-          loading="lazy"
+          width={224}
+          height={224}
+          fetchPriority="high"
+          decoding="async"
           className="rounded-full border-4 border-slate-200 object-cover w-48 h-48 md:w-56 md:h-56 shadow-lg"
         />
       </div>
