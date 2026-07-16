@@ -19,7 +19,7 @@ export const projectsData: Project[] = [
   {
     title: "ESLI Última Misión",
     description:
-      "Homemade spaceship videogame console built from scratch using Raspberry Pi Pico.",
+      "A spaceship shooter built for a custom Raspberry Pi Pico console with 10 upgradeable weapons, unique boss fights and a progressive level system. The project includes a companion website and a backend API that dynamically validates and manages a live Top 10 leaderboard.",
     media: [
       {
         type: "video",
@@ -43,7 +43,8 @@ export const projectsData: Project[] = [
   },
   {
     title: "HydroMasters",
-    description: "Real-time monitoring platform for hydroponics systems.",
+    description:
+      "An ESP32-powered hydroponic irrigation system that monitors water temperature and TDS levels in real time via an LCD display. It features automated pump controls and a web dashboard for live data tracking, history logging, and remote actuator management.",
     media: [
       {
         type: "video",
