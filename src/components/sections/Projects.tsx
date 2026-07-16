@@ -1,6 +1,5 @@
 import { projectsData } from "../../data";
 import { TechPill } from "../ui/TechPill";
-import { LazyVideo } from "../ui/LazyVideo";
 import { VscDebugStart } from "react-icons/vsc";
 import { ImGithub } from "react-icons/im";
 import {
@@ -31,23 +30,23 @@ export const Projects = () => {
           >
             <Carousel className="group w-full">
               <CarouselContent>
-                {project.media.map((media, index) => (
+                {project.media.map((media) => (
                   <CarouselItem key={media.src}>
                     <div className="aspect-video w-full overflow-hidden bg-slate-100">
                       {media.type === "video" ? (
-                        <LazyVideo
+                        <video
                           src={media.src}
-                          poster={media.poster}
-                          width={media.width}
-                          height={media.height}
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                          className="h-full w-full object-cover"
                           title={`${project.title} demo`}
                         />
                       ) : (
                         <img
                           src={media.src}
-                          alt={`${project.title} screenshot ${index + 1}`}
-                          width={media.width}
-                          height={media.height}
+                          alt=""
                           loading="lazy"
                           decoding="async"
                           className="h-full w-full object-cover"
@@ -59,7 +58,7 @@ export const Projects = () => {
               </CarouselContent>
               {project.media.length > 1 && (
                 <>
-                  <CarouselPrevious className="left-2" />
+                  <CarouselPrevious className="left-2 ${}" />
                   <CarouselNext className="right-2" />
                 </>
               )}
