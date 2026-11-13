@@ -1,7 +1,9 @@
 import {
   SiArduino,
+  SiC,
   SiClaudecode,
   SiCloudflare,
+  SiCplusplus,
   SiDocker,
   SiExpress,
   SiGit,
@@ -14,11 +16,12 @@ import {
   SiPostgresql,
   SiPython,
   SiReact,
+  SiRust,
   SiTailwindcss,
   SiTypescript,
   SiVercel,
 } from "react-icons/si";
-import { VscAzure } from "react-icons/vsc";
+import { VscAzure, VscCircuitBoard } from "react-icons/vsc";
 
 import type { TechLogo } from "../types/techLogo";
 
@@ -26,6 +29,25 @@ export const arduinoLogo: TechLogo = {
   name: "Arduino",
   Icon: SiArduino,
   hoverColor: "#00979D",
+};
+
+export const cLogo: TechLogo = {
+  name: "C",
+  Icon: SiC,
+  hoverColor: "#A8B9CC",
+};
+
+export const cppLogo: TechLogo = {
+  name: "C++",
+  Icon: SiCplusplus,
+  hoverColor: "#00599C",
+};
+
+// Generic icon: there is no brand logo for IoT.
+export const iotLogo: TechLogo = {
+  name: "IoT",
+  Icon: VscCircuitBoard,
+  hoverColor: "#0EA5E9",
 };
 
 export const nodeJsLogo: TechLogo = {
@@ -68,6 +90,12 @@ export const pythonLogo: TechLogo = {
   name: "Python",
   Icon: SiPython,
   hoverColor: "#3776AB",
+};
+
+export const rustLogo: TechLogo = {
+  name: "Rust",
+  Icon: SiRust,
+  hoverColor: "#B7410E",
 };
 
 export const nextJsLogo: TechLogo = {

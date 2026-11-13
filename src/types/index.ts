@@ -5,3 +5,9 @@ export { type TechLogo } from "./techLogo";
 export { type TechStack } from "./techStack";
 export { type Education } from "./education";
 export { type Certification } from "./certifications";
+export {
+  type Talk,
+  type TalkEvent,
+  type TalkFormat,
+  type TalkLanguage,
+} from "./talk";
