@@ -29,7 +29,7 @@ Single-page portfolio with no routing. Root component (`WebPortfolioApp.tsx`) co
 
 **Adding content:** All portfolio content lives in `src/data/`. New entries only require updating the relevant `.data.ts` file — no component changes needed unless the data shape changes.
 
-**Media:** Project media is declared in `projects.data.ts` as a `ProjectMedia[]` discriminated union (`image` | `video`). Videos require a `poster` and render via `LazyVideo`, which only mounts the `<video>` once it scrolls into view. Encode videos to 720p H.264 (`-crf 28 -movflags +faststart -an`) and images to WebP at ~1200px before adding them — source files at full resolution should never enter the repo.
+**Media:** Project media is declared in `projects.data.ts` as a `ProjectMedia[]` discriminated union (`image` | `video`). Videos require a `poster` and render via `LazyVideo`, which only mounts the `<video>` once it scrolls into view. Encode videos to 720p H.264 (`-crf 28 -movflags +faststart -an`) and images to WebP at ~1200px before adding them — source files at full resolution should never enter the repo. Use `pnpm optimize <source-file-or-folder> <output-folder>` (`scripts/optimize-media.mjs`, needs `ffmpeg` on PATH) to apply these settings; it also generates a `-poster.webp` for each video.
 
 **Styling:** Tailwind CSS v4 utility classes only — no CSS modules, no CSS-in-JS. Responsive breakpoint is `md:`.
 
