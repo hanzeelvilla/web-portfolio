@@ -5,6 +5,7 @@ import { Footer } from "./components/layout/Footer";
 import { Hero } from "./components/sections/Hero";
 import { Projects } from "./components/sections/Projects";
 import { Stack } from "./components/sections/Stack";
+import { Talks } from "./components/sections/Talks";
 
 export const WebPortfolioApp = () => {
   return (
@@ -15,6 +16,7 @@ export const WebPortfolioApp = () => {
         <Hero />
         <Experience />
         <Projects />
+        <Talks />
         <Stack />
         <Education />
         <Footer />

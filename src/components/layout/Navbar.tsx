@@ -5,6 +5,7 @@ const navigationLinks = [
   { label: "About Me", href: "#about" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
+  { label: "Talks", href: "#talks" },
   { label: "Stack", href: "#stack" },
   { label: "Education", href: "#education" },
 ];
